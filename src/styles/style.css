@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2937;
+}
+header img {
+  width: 6rem;
+  height: 5rem;
+  padding: 0.5rem;
+  margin-left: 1%;
+}
+header button {
+  width: 5rem;
+  height: 2.4rem;
+  background-color: #F97415;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  margin-right: 2%;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: bold;
+}/*# sourceMappingURL=style.css.map */
