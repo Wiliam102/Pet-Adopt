@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Styles-->
+      <link rel="stylesheet" href="./src/styles/style.css">
+
     <!-- font inter-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<!-- Styles-->
-    <link rel="stylesheet" href="./src/styles/style.css">
+
+  
     <title>Pet Adopt</title>
 </head>
 <body>
@@ -28,21 +31,24 @@
                 <img id="fotoDoPet" src="./src/assets/scooby 1.png" alt="Foto do pet">
             </article>
         </section>
+
         <section class="pets">
-            <a href="http://">
-                <img class="perfilPet" src="./src/assets/scooby 1.png" alt="cachorro scooby">
+             <a href="#">
+                <img class="perfilPet" src="./src/assets/scooby 1.png" alt="scooby" onclick="trocarDescricaoPet()">
             </a>
-             <a href="http://">
-                <img class="perfilPet" src="./src/assets/garfield.png" alt="gato garfield">
+             <a href="#">
+                <img class="perfilPet" src="./src/assets/garfield.png" alt="garfield" onclick="trocarDescricaoPet()">
             </a>
-             <a href="http://">
-                <img class="perfilPet" src="./src/assets/thor.png" alt="cachorro thor">
+             <a href="#">
+                <img class="perfilPet" src="./src/assets/thor.png" alt="thor" onclick="trocarDescricaoPet()">
             </a>
-             <a href="http://">
-                <img class="perfilPet" src="./src/assets/pantera.png" alt="gato pantera">
+             <a href="#">
+                <img class="perfilPet" src="./src/assets/pantera.png" alt="pantera" onclick="trocarDescricaoPet()">
             </a>
-          
         </section>
+           
+          
+        
 
         <section class="formulario">
             <h2>Pronto Para transformar uma vida?</h2>
@@ -50,18 +56,30 @@
 
             <form action="">
                 <label for="nome">Nome:</label>
-                <input type="text">
+                <input type="text" placeholder="nome">
                 <label for="telefone">Telefone:</label>
-                <input type="tel">
+                <input type="tel" placeholder="telefone">
                 <label for="email">Email:</label>
-                <input type="email">
+                <input type="email" placeholder="@example.com">
+                 
+                <label for="animal">Animal escolhido:</label>
+                
+                <div>
+                    <label for="gato">Gato
+                    <input type="radio" name="animal" value="gato">
+                </label>
+                
+                <label for="cachorro">Cachorro
+                     <input type="radio" name="animal" value="cahorro">
+                </label>
 
-                <button type="submit"></button>
+                </div>
+                 <label for="nome-animal">Nome do animal</label>
+                <input type="text" placeholder="nome do animal">
+                <button>Comece sua jornada</button>
             </form>
-
         </section>
     </main>
-
     <script src="./src/js/script.js"></script>
 </body>
 </html>
