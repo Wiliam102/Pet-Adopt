@@ -32,12 +32,9 @@ const nome = document.getElementById("nomeDoPet");
 const descricao = document.getElementById("descricaoDoPet");
 const foto = document.getElementById("fotoDoPet");
 
-function trocarDescricaoPet(){
-
+function trocarDescricaoPet(img){
  // linha abaixo constante recebe o alt da imagem clicada
- const nomePet = document.querySelector("img").alt;
-
- 
+ const nomePet = img.dataset.pet;
  const pet = pets[nomePet];// recebe objeto com nome do pet
  nome.textContent = pet.nome; // troca o nome
  descricao.textContent = pet.descricao; // troca a descricao
