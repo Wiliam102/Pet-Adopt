@@ -66,6 +66,7 @@ article{
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+    flex-wrap: wrap;
 
     .perfilPet{
         width: 7.5rem;
@@ -115,16 +116,13 @@ article{
             margin-bottom: 0.5rem;
         }
 
-        div{
-            display: flex;
-            width: 40%;
-            justify-content: flex-start;
-            margin-bottom: 0.5rem;
+       .radio-group {
+           width: 40%;
+           display: flex;
+           justify-content: flex-start;
 
-            input{
-                margin: -1rem;
-            }
-        }
+         }
+
 
         button{
             padding: 0.8rem 2rem;
@@ -179,6 +177,59 @@ footer{
         padding: 1rem;
         text-align: center;
         color: #9CA3AF;
+    }
+
+}
+
+@media(max-width:500px){
+    .banner{
+        height: auto;
+
+        article{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 1rem;
+
+            div{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                gap: 1rem;
+
+                #descricaoDoPet{
+                    font-size: 1.3rem;
+                    text-align: left;
+                    line-height: 1.5;
+                    width: 80%;
+                    text-align: justify;
+                }
+            }
+
+            img{
+                width: 80%;
+            }
+
+
+        }
+    }
+
+    .formulario{
+        
+        form{
+            
+            label{
+            width: 80%;
+            text-align: left;   
+            
+        }
+            input{
+                width: 80%;
+                padding: 0.8rem;
+            }
+
+        }
     }
 
 }

@@ -1,103 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Styles-->
-      <link rel="stylesheet" href="./src/styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles-->
+    <link rel="stylesheet" href="./src/styles/style.css" />
 
     <!-- font inter-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  
     <title>Pet Adopt</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <img src="./src/assets/logoheader.png" alt="logo do site">
-        <button>Adote</button>
+      <img src="./src/assets/logoheader.png" alt="logo do site" />
+      <button>Adote</button>
     </header>
 
     <main>
-        <section class=banner>
-            <article>
-                <div> 
-                    <h1 id="nomeDoPet">Scooby</h1>
-                    <p id="descricaoDoPet">Scooby é um cão leal e protetor. Ama crianças e é muito obediente. Precisa de espaço para correr e brincar. Ideal para famílias ativas.</p>
-                </div>
-                <img id="fotoDoPet" src="./src/assets/scooby 1.png" alt="Foto do pet">
-            </article>
-        </section>
+      <section class="banner">
+        <article>
+          <div>
+            <h1 id="nomeDoPet">Scooby</h1>
+            <p id="descricaoDoPet">
+              Scooby é um cão leal e protetor. Ama crianças e é muito obediente.
+              Precisa de espaço para correr e brincar. Ideal para famílias
+              ativas.
+            </p>
+          </div>
+          <img
+            id="fotoDoPet"
+            src="./src/assets/scooby 1.png"
+            alt="Foto do pet"
+          />
+        </article>
+      </section>
 
+      <section class="pets">
+        <a href="#">
+          <img
+            class="perfilPet"
+            src="./src/assets/scooby 1.png"
+            alt="cachorro caramelo de porte pequeno chamado scooby"
+            data-pet="scooby"
+            onclick="trocarDescricaoPet(this)"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="perfilPet"
+            src="./src/assets/garfield.png"
+            alt="gato garfield cor branca e alaranjada"
+            data-pet="garfield"
+            onclick="trocarDescricaoPet(this)"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="perfilPet"
+            src="./src/assets/thor.png"
+            alt="thor é um cachorro caramelo de porte médio"
+            data-pet="thor"
+            onclick="trocarDescricaoPet(this)"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="perfilPet"
+            src="./src/assets/pantera.png"
+            alt="pantera é uma gata de cor preta"
+            data-pet="pantera"
+            onclick="trocarDescricaoPet(this)"
+          />
+        </a>
+      </section>
 
-        <section class="pets">
-             <a href="#">
-                <img class="perfilPet" src="./src/assets/scooby 1.png" alt="cachorro caramelo de porte pequeno chamado scooby" data-pet = "scooby" onclick="trocarDescricaoPet(this)">
-            </a>
-             <a href="#">
-                <img class="perfilPet" src="./src/assets/garfield.png" alt="gato garfield cor branca e alaranjada" data-pet = "garfield" onclick="trocarDescricaoPet(this)">
-            </a>
-             <a href="#">
-                <img class="perfilPet" src="./src/assets/thor.png" alt="thor é um cachorro caramelo de porte médio" data-pet = "thor"  
-                onclick="trocarDescricaoPet(this)">
-            </a>
-             <a href="#">
-                <img class="perfilPet" src="./src/assets/pantera.png" alt="pantera é uma gata de cor preta" data-pet = "pantera" onclick="trocarDescricaoPet(this)">
-            </a>
-        </section>
-           
-          
-        
+      <section class="formulario">
+        <h2>Pronto Para transformar uma vida?</h2>
+        <p>
+          Junte-se a centenas de famílias que já encontraram seus melhores
+          amigos através do PetAdopt.
+        </p>
 
-        <section class="formulario">
-            <h2>Pronto Para transformar uma vida?</h2>
-            <p>Junte-se a centenas de famílias que já encontraram seus melhores amigos através do PetAdopt.</p>
+        <form action="">
+          <label for="nome">Nome:</label>
+          <input type="text" placeholder="nome" class="input" />
 
-            <form action="">
-                <label for="nome">Nome:</label>
-                <input type="text" placeholder="nome">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" placeholder="telefone">
-                <label for="email">Email:</label>
-                <input type="email" placeholder="@example.com">
-                 
-                <label for="animal">Animal escolhido:</label>
-                
-                <div>
-                    <label for="gato">Gato
-                    <input type="radio" name="animal" value="gato">
-                </label>
-                
-                <label for="cachorro">Cachorro
-                     <input type="radio" name="animal" value="cahorro">
-                </label>
+          <label for="telefone">Telefone:</label>
+          <input class="input" type="tel" placeholder="telefone" />
 
-                </div>
-                 <label for="nome-animal">Nome do animal</label>
-                <input type="text" placeholder="nome do animal">
-                <button>Comece sua jornada</button>
-            </form>
-        </section>
+          <label for="email">Email:</label>
+          <input type="email" placeholder="@example.com" class="input" />
+
+          <label for="animal">Animal escolhido:</label>
+
+          <div class="radio-group">
+            <label
+              > Gato</label>
+
+              <input type="radio" name="animal" value="gato" />
+
+            <label>Cachorro</label>
+              <input type="radio" name="animal" value="cachorro"/>
+          </div>
+
+          <label for="nome-animal">Nome do animal</label>
+          <input type="text" placeholder="nome do animal" />
+          <button>comece sua jornada</button>
+        </form>
+      </section>
     </main>
     <footer>
-        <section>
-            <img src="./src/assets/logoheader.png" alt="logo" class="logo">
+      <section>
+        <img src="./src/assets/logoheader.png" alt="logo" class="logo" />
 
-        <p>Nossa missão é conectar pets abandonados com famílias amorosas, transformando vidas através do amor incondicional.</p>
+        <p>
+          Nossa missão é conectar pets abandonados com famílias amorosas,
+          transformando vidas através do amor incondicional.
+        </p>
 
         <div>
-            <img src="./src/assets/facebook.png" alt="facebook">
-             <img src="./src/assets/instagram.png" alt="instagram">
+          <img src="./src/assets/facebook.png" alt="facebook" />
+          <img src="./src/assets/instagram.png" alt="instagram" />
         </div>
-        </section>
+      </section>
 
-        <p> &copy; 2025 PetAdopt. Desenvolvido com ❤️ para ajudar nossos amigos peludinhos.</p>
-        
+      <p>
+        &copy; 2025 PetAdopt. Desenvolvido com ❤️ para ajudar nossos amigos
+        peludinhos.
+      </p>
     </footer>
-
     <script src="./src/js/script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-// abaixo um array de objetos
+// lista de objetos
 const pets = {
 
     scooby: {
@@ -33,7 +33,7 @@ const descricao = document.getElementById("descricaoDoPet");
 const foto = document.getElementById("fotoDoPet");
 
 function trocarDescricaoPet(img){
- // linha abaixo constante recebe o alt da imagem clicada
+ // linha abaixo constante recebe o valor do atributo data-pet da imagem clicada
  const nomePet = img.dataset.pet;
  const pet = pets[nomePet];// recebe objeto com nome do pet
  nome.textContent = pet.nome; // troca o nome
